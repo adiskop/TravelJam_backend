@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_23_084343) do
+ActiveRecord::Schema.define(version: 2021_07_23_121100) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,9 +25,11 @@ ActiveRecord::Schema.define(version: 2021_07_23_084343) do
     t.string "title"
     t.string "description"
     t.string "image_url"
-    t.integer "destination_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "destination_id"
+    t.index ["destination_id"], name: "index_travelgems_on_destination_id"
   end
 
+  add_foreign_key "travelgems", "destinations"
 end
