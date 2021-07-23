@@ -27,9 +27,12 @@ jamaica = Destination.create(name: "Jamaica")
 thailand = Destination.create(name: "Thailad")
 germany = Destination.create(name: "Germany")
 
-Syllabus.create(title: "West African Art History", description: "West African cultures developed bronze casting for reliefs, like the famous Benin Bronzes, to decorate palaces and for highly naturalistic royal heads from around the Bini town of Benin City, Edo State, as well as in terracotta or metal, from the 12th–14th centuries. Akan goldweights are a form of small metal sculptures produced over the period 1400–1900; some apparently represent proverbs, contributing a narrative element rare in African sculpture; and royal regalia included impressive gold sculptured elements.[8] Many West African figures are used in religious rituals and are often coated with materials placed on them for ceremonial offerings. The Mande-speaking peoples of the same region make pieces from wood with broad, flat surfaces and arms and legs shaped like cylinders. In Central Africa, however, the main distinguishing characteristics include heart-shaped faces that are curved inward and display patterns of circles and dots.", image_url: "https://upload.wikimedia.org/wikipedia/commons/9/97/AdinkraCalabashStamps.jpg", category_id: art.id)
 
-# source: https://en.wikipedia.org/wiki/African_art
+Travelgem.create(title: "Black Forest", description: "The Black Forest is a large forested mountain range in south-west Germany, in the state of Baden-Württemberg, bounded by the Rhine valley to the west and south. It is the source of the Danube and Neckar rivers.
+Its highest peak is the Feldberg with an elevation of 1,493 metres (4,898 ft) above sea level. Roughly oblong in shape, with a length of 160 kilometres (100 miles) and breadth of up to 50 km (30 mi), it has an area of about 6,009 km2 (2,320 sq mi).", image_url: "https://en.wikipedia.org/wiki/Black_Forest#/media/File:Green_winter.jpg", category_id: germany.id)
+
+
+# source: https://en.wikipedia.org/wiki/Black_Forest
 ```
 
 ### Stretch Goals

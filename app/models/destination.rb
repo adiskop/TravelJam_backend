@@ -1,3 +1,3 @@
 class Destination < ApplicationRecord
-    #has_many :travelgems
+    has_many :travelgems
 end
