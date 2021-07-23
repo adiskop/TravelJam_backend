@@ -1,0 +1,2 @@
+class Travelgem < ApplicationRecord
+end
