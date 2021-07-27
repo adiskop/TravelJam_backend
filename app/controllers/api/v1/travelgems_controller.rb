@@ -8,7 +8,7 @@ class Api::V1::TravelgemsController < ApplicationController
     def create
         travelgem = Travelgem.new(travelgem_params)
         if travelgem.save
-            render json: travelgem, status: :accepted 
+            render json: TravelgemSerializer.new(travelgem), status: :accepted 
         else
             render json: {error:travelgem.error.full_messages}, status: :unprocessable_entity
         end

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 namespace :api do
   namespace :v1 do
     resources :travelgems, only: [:index, :create]
+    resources :destinations, only: [:index]
   end
 end
 
