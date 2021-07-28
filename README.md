@@ -1,24 +1,24 @@
 # README
+Travel Jam is an app for nature lovers who would like to save all their past/future 
+travel gems (or sweet travel spots), for future reference. 
+### Models
+- Travelgem
+    - title
+    - description
+    - image_url
+    - destination_id
+- Destination
+    - name
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Associations
 
-Things you may want to cover:
+```ruby
+TravelGem
 
-* Ruby version
+belongs_to :destination
 
-* System dependencies
+Destination
 
-* Configuration
+has_many :travelgems
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
