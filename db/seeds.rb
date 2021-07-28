@@ -13,6 +13,10 @@ germany = Destination.create(name: "Germany")
 jamaica = Destination.create(name: "Jamaica")
 costa_rica = Destination.create(name: "Costa Rica")
 thailand = Destination.create(name: "Thailad")
+holland = Destination.create(name: "Holland")
+italy = Destination.create(name: "Itally")
+croatia = Destination.create(name: "Croatia")
+usa = Destination.create(name: "USA")
 
 
 Travelgem.create(title: "Black Forest", description: "The Black Forest is a large forested mountain
