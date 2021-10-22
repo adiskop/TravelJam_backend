@@ -1,5 +1,6 @@
 class Api::V1::TravelgemsController < ApplicationController
 
+    #RESTFULLY
     def index 
         travelgems = Travelgem.all
         render json: TravelgemSerializer.new(travelgems)
